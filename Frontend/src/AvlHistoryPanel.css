@@ -1,0 +1,290 @@
+
+/* PART 3 — AVL Historical Intelligence */
+
+.avl-section {
+  margin-top: 32px;
+}
+
+.avl-section .section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.avl-algorithm {
+  padding: 9px 14px;
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  border-radius: 30px;
+  background: rgba(16, 185, 129, 0.1);
+  color: #6ee7b7;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.avl-statistics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin: 22px 0;
+}
+
+.avl-stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 24px;
+  border: 1px solid #263a56;
+  border-radius: 16px;
+  background: linear-gradient(
+    145deg,
+    #14243d,
+    #0d192c
+  );
+}
+
+.avl-stat-card span {
+  color: #95abc5;
+  font-size: 13px;
+}
+
+.avl-stat-card strong {
+  color: #f8fafc;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.avl-stat-card small {
+  color: #6984a5;
+  font-size: 12px;
+}
+
+.avl-stat-card .avl-algorithm-value {
+  color: #60a5fa;
+}
+
+.avl-search-panel,
+.avl-results-panel {
+  margin-top: 20px;
+  padding: 26px;
+  border: 1px solid #263a56;
+  border-radius: 18px;
+  background: #101d32;
+}
+
+.avl-panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.avl-panel-heading h3 {
+  margin: 0 0 8px;
+  color: #f8fafc;
+  font-size: 19px;
+}
+
+.avl-panel-heading p {
+  margin: 0;
+  color: #92a8c3;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.avl-search-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.avl-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.avl-field span {
+  color: #bacbe0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.avl-field input {
+  width: 100%;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #354b68;
+  border-radius: 10px;
+  outline: none;
+  background: #091627;
+  color: #e8f0fc;
+  color-scheme: dark;
+}
+
+.avl-field input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.avl-form-actions {
+  margin-top: 22px;
+}
+
+.avl-primary-button,
+.avl-secondary-button {
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.avl-primary-button {
+  border: 1px solid #3b82f6;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.avl-primary-button:hover {
+  background: #1d4ed8;
+}
+
+.avl-secondary-button {
+  border: 1px solid #37506f;
+  background: #1a2d48;
+  color: #d9e8ff;
+}
+
+.avl-secondary-button:hover {
+  background: #253c5c;
+}
+
+.avl-primary-button:disabled,
+.avl-secondary-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.avl-error {
+  margin-top: 18px;
+  padding: 13px 15px;
+  border: 1px solid #b91c1c;
+  border-radius: 10px;
+  background: rgba(239, 68, 68, 0.1);
+  color: #fca5a5;
+  font-size: 13px;
+}
+
+.avl-result-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.avl-result-summary > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 17px;
+  border: 1px solid #2b4261;
+  border-radius: 12px;
+  background: #0b1729;
+}
+
+.avl-result-summary span {
+  color: #92a8c3;
+  font-size: 12px;
+}
+
+.avl-result-summary strong {
+  color: #7dd3fc;
+  font-size: 19px;
+  overflow-wrap: anywhere;
+}
+
+.avl-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.avl-table {
+  width: 100%;
+  min-width: 740px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.avl-table th,
+.avl-table td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #263a56;
+  font-size: 13px;
+}
+
+.avl-table th {
+  color: #8ba7c9;
+  font-weight: 700;
+  background: #0c1a2d;
+}
+
+.avl-table td {
+  color: #d9e6f6;
+}
+
+.avl-table tbody tr:hover {
+  background: #172a45;
+}
+
+.avl-empty {
+  padding: 35px 16px;
+  color: #9cb1cb;
+  text-align: center;
+}
+
+.avl-result-note,
+.avl-explanation {
+  color: #8ea4bf;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.avl-result-note {
+  margin-top: 15px;
+}
+
+.avl-explanation {
+  margin-top: 20px;
+}
+
+.avl-explanation strong {
+  color: #bfdbfe;
+}
+
+@media (max-width: 900px) {
+  .avl-statistics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .avl-search-grid,
+  .avl-result-summary {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .avl-statistics {
+    grid-template-columns: 1fr;
+  }
+
+  .avl-search-panel,
+  .avl-results-panel {
+    padding: 18px;
+  }
+}
